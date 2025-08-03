@@ -1,0 +1,1316 @@
+﻿<OnScreenTrackZ_NavObjects>
+
+<remove xpath="/nav_object_classes/nav_object_class[@name='zombie']/property[@name='map_settings']" />
+<remove xpath="/nav_object_classes/nav_object_class[@name='zombie']/property[@name='compass_settings']" />
+
+<!--僵尸追踪-->
+<append xpath="/nav_object_classes/nav_object_class[@name='zombie']">
+		<property name="requirement_type" value="None" />
+		<map_settings>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="500"/>
+			<property name="has_pulse" value="false"/>
+		</map_settings>
+
+		<compass_settings>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="100"/>
+			<property name="max_scale_distance" value="30"/>
+			<property name="has_pulse" value="false"/>
+			<property name="icon_clamped" value="false" />
+		</compass_settings>
+			
+		<onscreen_settings>
+			<!--<property name="sprite_name" value="Icon_Zombie"/>-->
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="100"/>
+			<property name="max_scale_distance" value="30"/>
+			<property name="has_pulse" value="true"/>
+			<property name="text_type" value="Distance"/>
+			<property name="offset" value="0,1,0" />
+			<property name="show_offscreen" value="false" />
+		</onscreen_settings>
+</append>
+
+<insertAfter xpath="/nav_object_classes/nav_object_class[@name='zombie']">
+
+		<nav_object_class name="passive" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<property name="tag" value="Passive" />
+
+			<map_settings>
+				<property name="sprite_name" value="Icon_Dot"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Dot"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Dot"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>	
+		</nav_object_class>
+		
+		
+		<nav_object_class name="animalFlagSnake" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Snake"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Snake"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Snake"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagZombieDog" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Dog"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Dog"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Dog"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagZombieVulture" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Vulture"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Vulture"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Vulture"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagInsectSwarm" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Bee"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Bee"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Bee"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagMountainLion" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagDireWolf" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_DireWolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_DireWolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_DireWolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagWolf" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagBossGrace" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Grace"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Grace"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Grace"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagBear" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagPig" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>
+		<nav_object_class name="animalFlagChicken" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Chicken"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Chicken"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Chicken"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+		<nav_object_class name="animalFlagRabbit" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Rabbit"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Rabbit"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Rabbit"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+		<nav_object_class name="animalFlagStag" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Lu"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Lu"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+		
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Lu"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>
+		</nav_object_class>		
+
+			<nav_object_class name="zombieSpecialWight" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialWightFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialWightRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialWightCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialWightInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wight"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieNormal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieNormalFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieNormalRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieNormalCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieNormalInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Zombie"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialScreamer" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialScreamerFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialScreamerRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialScreamerCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialScreamerInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Screamer"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+
+		<nav_object_class name="zombieDemo" extends="zombie">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<property name="sprite_name" value="Icon_Demo"/>
+				<property name="color" value="255,0,255,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Demo"/>
+				<property name="color" value="255,0,255,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Demo"/>
+				<property name="color" value="255,0,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+
+		<nav_object_class name="zombieSpecialFatCop" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialFatCopFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFatCopRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFatCopCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFatCopInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Fat_Cop"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialSoldier" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialSoldierFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSoldierRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSoldierCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSoldierInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Soldier"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialBurnt" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialBurntFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialBurntRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialBurntCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialBurntInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialSpider" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialSpiderFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSpiderRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSpiderCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialSpiderInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialMutated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialMutatedFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialMutatedRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialMutatedCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialMutatedInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Mutated"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialFrostclaw" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialFrostclawFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFrostclawRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFrostclawCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialFrostclawInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Frostclaw"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		
+		<nav_object_class name="zombieSpecialPlagueSpitter" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		<nav_object_class name="zombieSpecialPlagueSpitterFeral" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialPlagueSpitterRadiated" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="100,255,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="100,255,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="100,255,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialPlagueSpitterCharged" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="30,144,255,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="30,144,255,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="30,144,255,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		<nav_object_class name="zombieSpecialPlagueSpitterInfernal" extends="zombie">
+			<property name="requirement_type" value="None" />
+			<map_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,165,0,255"/>
+			</map_settings>
+			<compass_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,165,0,255"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_PlagueSpitter"/>
+				<property name="color" value="255,165,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+</insertAfter>	
+
+<!--睡袋和领地石-->
+<!--	<set xpath="/nav_object_classes/nav_object_class[@name='sleeping_bag']">
+			<property name="requirement_type" value="IsOwner" />
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_map_bed"/>
+				<property name="min_distance" value="0"/>
+				<property name="color" value="125,225,250,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="offset" value="0.5,0,0.5" />
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_map_bed"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_scale_distance" value="500"/>
+				<property name="color" value="125,225,250,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="min_fade_percent" value="0.65" />
+				<property name="icon_clamped" value="false" />
+				<property name="offset" value="0.5,0,0.5" />
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_map_bed"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_scale_distance" value="500"/>
+				<property name="min_fade_percent" value="0.65" />
+				<property name="color" value="125,225,250,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0.5,0,0.5" />
+			</onscreen_settings>		
+	</set>
+	
+	<set xpath="/nav_object_classes/nav_object_class[@name='land_claim']">
+			<property name="requirement_type" value="IsOwner" />
+			<map_settings>
+				<property name="sprite_name" value="ui_game_symbol_brick"/>
+				<property name="min_distance" value="0"/>
+				<property name="color" value="199,188,127,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="offset" value="0.5,0.5,0.5" />
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="ui_game_symbol_brick"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_scale_distance" value="1024"/>
+				<property name="color" value="199,188,127,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="icon_clamped" value="false" />
+				<property name="offset" value="0.5,0.5,0.5" />
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_brick"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_scale_distance" value="1024"/>
+				<property name="min_fade_percent" value="0.65" />
+				<property name="color" value="199,188,127,255"/>
+				<property name="has_pulse" value="false"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0.5,0.5,0.5" />
+			</onscreen_settings>
+		
+	</set>-->
+	
+	<!-- 载具追踪 -->
+<set xpath="/nav_object_classes/nav_object_class[@name='bicycle']">
+		<property name="requirement_type" value="IsVehicleOwner" />
+		<map_settings>
+			<property name="sprite_name" value="ui_game_symbol_bicycle"/>
+			<property name="min_distance" value="5"/>
+			<property name="color" value="255,215,0,255"/>
+			<property name="has_pulse" value="false"/>
+			<property name="offset" value="0,0.5,0" />
+		</map_settings>
+
+		<compass_settings>
+			<property name="sprite_name" value="ui_game_symbol_bicycle"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_scale_distance" value="1024"/>
+			<property name="color" value="255,215,0,255"/>
+			<property name="has_pulse" value="false"/>
+			<property name="icon_clamped" value="false" />
+			<property name="offset" value="0,0.5,0" />
+		</compass_settings>
+
+		<onscreen_settings>
+			<property name="sprite_name" value="ui_game_symbol_bicycle"/>
+			<property name="min_distance" value="5"/>
+			<property name="max_scale_distance" value="100"/>
+			<property name="min_fade_percent" value="0.65" />
+			<property name="color" value="255,215,0,255"/>
+			<property name="has_pulse" value="false"/>
+			<property name="text_type" value="Distance"/>
+			<property name="offset" value="0,0.5,0" />
+		</onscreen_settings>
+	
+</set>
+	
+<append xpath="/nav_object_classes/nav_object_class[@name='animaltracking_hostile']">
+		<property name="requirement_type" value="None" />
+		<map_settings>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="500"/>
+			<property name="has_pulse" value="false"/>
+		</map_settings>
+
+		<compass_settings>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="100"/>
+			<property name="max_scale_distance" value="30"/>
+			<property name="has_pulse" value="false"/>
+			<property name="icon_clamped" value="false" />
+		</compass_settings>
+		
+		<onscreen_settings>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="100"/>
+			<property name="max_scale_distance" value="30"/>
+			<property name="has_pulse" value="true"/>
+			<property name="text_type" value="Distance"/>
+			<property name="offset" value="0,1,0" />
+			<property name="show_offscreen" value="false" />
+		</onscreen_settings>
+</append>
+
+<insertAfter xpath="/nav_object_classes/nav_object_class[@name='animaltracking_hostile']">
+
+		<nav_object_class name="animaltracking_bear" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Bear"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>	
+		
+		<nav_object_class name="animaltracking_boar" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Pig"/>
+				<property name="offset" value="0,1.5,0" />
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		
+		<nav_object_class name="animaltracking_coyote" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<!--<property name="sprite_name" value="Icon_Dog"/>-->
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		
+		<nav_object_class name="animaltracking_direwolf" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		
+		<nav_object_class name="animaltracking_mountainlion" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<!--<property name="sprite_name" value="Icon_Dog"/>-->
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Lion"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+		
+		<nav_object_class name="animaltracking_wolf" extends="animaltracking_hostile">
+			<property name="requirement_type" value="None" />
+		
+			<map_settings>
+				<!--<property name="sprite_name" value="Icon_Dog"/>-->
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</map_settings>
+
+			<compass_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" value="Icon_Wolf"/>
+				<property name="color" value="255,0,0,255"/>
+			</onscreen_settings>					
+		</nav_object_class>
+
+</insertAfter>
+	
+</OnScreenTrackZ_NavObjects>
+
+
+	
