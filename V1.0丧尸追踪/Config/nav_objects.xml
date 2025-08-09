@@ -685,75 +685,75 @@
 		<nav_object_class name="zombieSpecialBurnt" extends="zombie">
 			<property name="requirement_type" value="None" />
 			<map_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,0,0,255"/>
 			</map_settings>
 			<compass_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,0,0,255"/>
 			</compass_settings>
 			<onscreen_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,0,0,255"/>
 			</onscreen_settings>					
 		</nav_object_class>
 		<nav_object_class name="zombieSpecialBurntFeral" extends="zombie">
 			<property name="requirement_type" value="None" />
 			<map_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,255,0,255"/>
 			</map_settings>
 			<compass_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,255,0,255"/>
 			</compass_settings>
 			<onscreen_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,255,0,255"/>
 			</onscreen_settings>					
 		</nav_object_class>	
 		<nav_object_class name="zombieSpecialBurntRadiated" extends="zombie">
 			<property name="requirement_type" value="None" />
 			<map_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="100,255,0,255"/>
 			</map_settings>
 			<compass_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="100,255,0,255"/>
 			</compass_settings>
 			<onscreen_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="100,255,0,255"/>
 			</onscreen_settings>					
 		</nav_object_class>	
 		<nav_object_class name="zombieSpecialBurntCharged" extends="zombie">
 			<property name="requirement_type" value="None" />
 			<map_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="30,144,255,255"/>
 			</map_settings>
 			<compass_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="30,144,255,255"/>
 			</compass_settings>
 			<onscreen_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="30,144,255,255"/>
 			</onscreen_settings>					
 		</nav_object_class>	
 		<nav_object_class name="zombieSpecialBurntInfernal" extends="zombie">
 			<property name="requirement_type" value="None" />
 			<map_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,165,0,255"/>
 			</map_settings>
 			<compass_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,165,0,255"/>
 			</compass_settings>
 			<onscreen_settings>
-				<property name="sprite_name" value="Icon_Spider"/>
+				<property name="sprite_name" value="Icon_Burnt"/>
 				<property name="color" value="255,165,0,255"/>
 			</onscreen_settings>					
 		</nav_object_class>

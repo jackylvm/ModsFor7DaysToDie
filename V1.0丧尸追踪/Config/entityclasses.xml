@@ -710,25 +710,25 @@
 	<append xpath="/entity_classes/entity_class[@name='zombieSoldierInfernal']"><property name="CompassIcon" value="Icon_Soldier" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieSoldierInfernal']"><property name="NavObject" value="zombieSpecialSoldierInfernal,clear_sleeper" /></append>
 
-	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="MapIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="TrackerIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="CompassIcon" value="Icon_Spider" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="MapIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="TrackerIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="CompassIcon" value="Icon_Burnt" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="NavObject" value="zombieSpecialBurnt,clear_sleeper" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="MapIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="TrackerIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="CompassIcon" value="Icon_Spider" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="MapIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="TrackerIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="CompassIcon" value="Icon_Burnt" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']"><property name="NavObject" value="zombieSpecialBurntFeral,clear_sleeper" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="MapIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="TrackerIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="CompassIcon" value="Icon_Spider" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="MapIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="TrackerIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="CompassIcon" value="Icon_Burnt" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']"><property name="NavObject" value="zombieSpecialBurntRadiated,clear_sleeper" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="MapIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="TrackerIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="CompassIcon" value="Icon_Spider" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="MapIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="TrackerIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="CompassIcon" value="Icon_Burnt" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntCharged']"><property name="NavObject" value="zombieSpecialBurntCharged,clear_sleeper" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="MapIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="TrackerIcon" value="Icon_Spider" /></append>
-	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="CompassIcon" value="Icon_Spider" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="MapIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="TrackerIcon" value="Icon_Burnt" /></append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="CompassIcon" value="Icon_Burnt" /></append>
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntInfernal']"><property name="NavObject" value="zombieSpecialBurntInfernal,clear_sleeper" /></append>
 
 	<append xpath="/entity_classes/entity_class[@name='zombieMutated']"><property name="MapIcon" value="Icon_Mutated" /></append>
