@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--7 Days To Die Version 2.6(b14)-->
+<ModInfo>
+  <Name value="SmartStack"/>
+  <DisplayName value="Smart Stack"/>
+  <Description value="UI-driven intelligent item sorting and stacking system."/>
+  <Author value="Jacky"/>
+  <Version value="3.0.0"/>
+  <SkipWithAntiCheat value="true"/>
+</ModInfo>
