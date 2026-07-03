@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--7 Days To Die Version 3.0.0(b259)-->
+<ModInfo>
+  <Name value="ZombieTracker"/>
+  <DisplayName value="Zombie Tracker"/>
+  <Description value="Detect zombies in the vicinity and assign a unique marker to each zombie."/>
+  <Author value="Jacky"/>
+  <Version value="3.0.0"/>
+  <SkipWithAntiCheat value="true"/>
+</ModInfo>
