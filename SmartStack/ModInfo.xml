@@ -6,5 +6,6 @@
   <Description value="UI-driven intelligent item sorting and stacking system."/>
   <Author value="Jacky"/>
   <Version value="3.0.0"/>
+  <Website value="https://github.com/jackylvm/ModsFor7DaysToDie"/>
   <SkipWithAntiCheat value="true"/>
 </ModInfo>

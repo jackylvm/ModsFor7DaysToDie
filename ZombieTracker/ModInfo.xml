@@ -6,5 +6,6 @@
   <Description value="Detect zombies in the vicinity and assign a unique marker to each zombie."/>
   <Author value="Jacky"/>
   <Version value="3.0.0"/>
+  <Website value="https://github.com/jackylvm/ModsFor7DaysToDie"/>
   <SkipWithAntiCheat value="true"/>
 </ModInfo>
