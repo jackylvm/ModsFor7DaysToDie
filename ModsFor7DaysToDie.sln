@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37411.7 d17.14
+VisualStudioVersion = 17.14.37411.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStack", "SmartStack\SmartStack.csproj", "{507EFF89-25DA-4D9F-82A1-8A253D0BEF05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieTracker", "ZombieTracker\ZombieTracker.csproj", "{8D826D87-246C-4632-B664-52EE49E66D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoTreasureZombies", "NoTreasureZombies\NoTreasureZombies.csproj", "{B3ABB485-0AB2-4391-B5F7-739526579BD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8D826D87-246C-4632-B664-52EE49E66D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D826D87-246C-4632-B664-52EE49E66D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D826D87-246C-4632-B664-52EE49E66D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3ABB485-0AB2-4391-B5F7-739526579BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3ABB485-0AB2-4391-B5F7-739526579BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3ABB485-0AB2-4391-B5F7-739526579BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3ABB485-0AB2-4391-B5F7-739526579BD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

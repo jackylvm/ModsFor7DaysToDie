@@ -1,0 +1,10 @@
+﻿  <configs>
+    <!-- 1. 移除藏宝图（TreasureChest目标）中挖出箱子时触发的尸潮事件 -->
+    <remove xpath="//objective[@type='TreasureChest']/property[@name='explosion_event']" />
+
+    <!-- 2. 移除所有挖宝类任务在缩圈过程中的刷怪事件 -->
+    <remove xpath="//quest/event[@type='TreasureRadiusReduction']" />
+
+    <!-- 3. 移除所有挖宝类任务（掩埋的补给）在最后阶段的刷怪动作 -->
+    <remove xpath="//quest/action[@type='SpawnGSEnemy']" />
+</configs>

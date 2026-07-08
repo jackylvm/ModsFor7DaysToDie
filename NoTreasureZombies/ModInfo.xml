@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ModInfo>
+  <Name value="NoTreasureZombies"/>
+  <DisplayName value="No Zombies on Treasure Digging"/>
+  <Description value="Removes zombie spawns during buried supplies and treasure map quests."/>
+  <Author value="Jacky"/>
+  <Version value="3.0.0"/>
+  <Website value="https://github.com/jackylvm/ModsFor7DaysToDie"/>
+  <SkipWithAntiCheat value="true"/>
+</ModInfo>
