@@ -1,0 +1,3 @@
+[submodule "QuickStack"]
+	path = QuickStack
+	url = https://github.com/jackylvm/QuickStack.git
